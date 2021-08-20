@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AlbumsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', [AlbumsController::class, 'index']);
+Route::get('/albums', [AlbumsController::class, 'index']);
+Route::get('/albums/create', [AlbumsController::class, 'create']);
+Route::post('/albums/store', [AlbumsController::class, 'store'])->name('album-store');
