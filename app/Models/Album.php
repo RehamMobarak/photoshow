@@ -10,6 +10,6 @@ class Album extends Model
     use HasFactory;
 
     public function photos(){
-        $this->hasMany("App\Models\Photo");
+        return $this->hasMany("App\Models\Photo");
     }
 }

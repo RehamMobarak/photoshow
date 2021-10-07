@@ -10,6 +10,6 @@ class Photo extends Model
     use HasFactory;
 
     public function album(){
-        $this->belongsTo("App\Models\Album");
+       return $this->belongsTo("App\Models\Album");
     }
 }
