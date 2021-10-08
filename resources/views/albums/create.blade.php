@@ -12,15 +12,14 @@
 
         <div class="form-group">
             <label for="description">Description</label>
-            <input type="text" class="form-control" id="description" name='description'
-                placeholder="Enter description">
+            <input type="text" class="form-control" id="description" name='description' placeholder="Enter description">
         </div>
 
         <div class="form-group">
             <label for="cover-image">Cover image</label>
             <input type="file" class="form-control" id="cover-image" name='cover-image'>
         </div>
-
+        <br>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
