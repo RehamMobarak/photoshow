@@ -27,3 +27,5 @@ Route::get('/albums/{id}', [AlbumsController::class, 'show'])->name('album-show'
 
 Route::get('/photos/create/{albumId}', [PhotosController::class, 'create'])->name('photo-create');
 Route::post('/photos/store', [PhotosController::class, 'store'])->name('photo-store');
+Route::delete('/photos/{id}', [PhotosController::class, 'destroy'])->name('photo-delete');
+Route::get('/photos/{id}', [PhotosController::class, 'show'])->name('photo-show');
