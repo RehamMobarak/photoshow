@@ -6,8 +6,8 @@
             <h1 class="fw-light">{{$album->Name}}</h1>
             <p class="lead text-muted">{{$album->Description}}</p>
             <p>
-                <a href="#" class="btn btn-primary my-2">Upload photos</a>
-                <a href="#" class="btn btn-secondary my-2">Go back</a>
+                <a href={{route('photo-create' , $album->id)}} class="btn btn-primary my-2">Upload photos</a>
+                <a href="/" class="btn btn-secondary my-2">Go Home</a>
             </p>
         </div>
     </div>
